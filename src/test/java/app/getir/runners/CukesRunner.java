@@ -11,9 +11,9 @@ import org.junit.runner.RunWith;
                 "html:target/cucumber-reports"
         },
         features ="src/test/resources/features" ,
-        glue = "app/getir/step_defs",
+        glue = "app/getir/step_definitions",
         dryRun = false,
-        tags = ""
+        tags = "@wip"
 )
 public class CukesRunner {
 }

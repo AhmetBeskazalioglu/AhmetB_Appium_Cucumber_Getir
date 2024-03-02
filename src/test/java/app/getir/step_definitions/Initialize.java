@@ -1,4 +1,4 @@
-package app.getir.step_defs;
+package app.getir.step_definitions;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
@@ -13,6 +13,7 @@ import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import java.util.concurrent.TimeUnit;
 
 public class Initialize {
 
@@ -22,6 +23,7 @@ public class Initialize {
     @Before
     public void setUp(){
         initializeDriver();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
     @After
     public void tearDown(Scenario scenario) throws InterruptedException {
@@ -29,10 +31,11 @@ public class Initialize {
             final byte[] screenshot= ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
             scenario.attach(screenshot,"image/png",scenario.getName());
         }
+        service.stop();
     }
 
 
-    public static void initializeDriver(){
+    public void initializeDriver(){
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
