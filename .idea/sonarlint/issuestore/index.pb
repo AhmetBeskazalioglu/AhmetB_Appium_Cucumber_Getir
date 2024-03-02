@@ -11,3 +11,11 @@ a
 +src/test/java/app/getir/pages/BasePage.java,f/d/fd24996b839b6bba0c85b6ddf01ee762a11cfdc0
 e
 5src/test/java/app/getir/step_defs/Getir_StepDefs.java,0/4/048be1deb9cb59dd816469cf800deb55e2406bbf
+\
+,src/test/java/app/getir/pages/LoginPage.java,a/1/a1c020fa92cbe0c5ac6028e5cf089c6a86714851
+_
+/src/test/java/app/getir/pages/CategoryPage.java,b/6/b614dd894aaa22bae38d368a6418d730ffa985fa
+
+Q.idea/sonarlint/securityhotspotstore/a/1/a1c020fa92cbe0c5ac6028e5cf089c6a86714851,6/5/657034c36d366a0984462b944434366a28238986
+w
+G.idea/sonarlint/issuestore/a/1/a1c020fa92cbe0c5ac6028e5cf089c6a86714851,5/1/51652a76a1247d7651b2b0ec2bd627f2a62428c5

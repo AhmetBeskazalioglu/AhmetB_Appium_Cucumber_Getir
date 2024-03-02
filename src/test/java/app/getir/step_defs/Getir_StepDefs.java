@@ -1,15 +1,24 @@
 package app.getir.step_defs;
 
+import app.getir.pages.CategoryPage;
+import app.getir.pages.LoginPage;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class Getir_StepDefs {
+    LoginPage loginPage = new LoginPage();
+    CategoryPage categoryPage = new CategoryPage();
+
     @When("The user opens Getir app and enters {string} and {string}")
-    public void the_user_opens_Getir_app_and_enters_and(String string, String string2) {
+    public void the_user_opens_Getir_app_and_enters_and(String username, String password) {
+        loginPage.login(username, password);
     }
 
     @Then("The user logins successfully")
     public void the_user_logins_successfully() {
+        String expected = "Dondurma";
+        String actual = categoryPage.getCategory("Dondurma");
     }
 
     @When("The user clicks basket button")
@@ -20,8 +29,8 @@ public class Getir_StepDefs {
     public void the_user_verifies_that_basket_is_empty_and_able_to_see(String string) {
     }
 
-    @When("The user able to see all menu list in console and verifies that size is {string}")
-    public void the_user_able_to_see_all_menu_list_in_console_and_verifies_that_size_is(String string) {
+    @When("The user able to see all menu list in console and verifies that size is {int}")
+    public void the_user_able_to_see_all_menu_list_in_console_and_verifies_that_size_is(int string) {
     }
 
     @When("The user clicks category which is {string}")

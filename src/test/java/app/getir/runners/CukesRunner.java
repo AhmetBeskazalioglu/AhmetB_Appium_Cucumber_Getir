@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         },
         features ="src/test/resources/features" ,
         glue = "app/getir/step_defs",
-        dryRun = true,
+        dryRun = false,
         tags = ""
 )
 public class CukesRunner {
