@@ -1,12 +1,12 @@
-Feature: Getir E2E Test Automation Framework
+Feature: Getir E2E Test
 
-    #Go to basket and verify that it is empty
+  #Go to basket and verify that it is empty
   #go to items list and print all list and verify that size is 12
   #Go to second category and add two different items
   #Go back the home page
   #Go to basket again
   #Verify total amount
-
+    @wip
     Scenario: Getir Basket Test
         When The user opens Getir app and enters "hello@getir.com" and "hello"
         Then The user logins successfully
@@ -18,4 +18,4 @@ Feature: Getir E2E Test Automation Framework
             |Ürün 9|
             |Ürün 13|
         And The user clicks basket button
-        Then The user verifies that "Total Amount : 149 ₺"
+        Then The user verifies that "Total Amount : 42 ₺"

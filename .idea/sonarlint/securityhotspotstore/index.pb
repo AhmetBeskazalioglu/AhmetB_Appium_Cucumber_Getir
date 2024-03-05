@@ -5,12 +5,8 @@ H
 configuration.properties,b/6/b6c5dfcde54b418dd721679edbc49a89558b78a0
 `
 0src/test/java/app/getir/runners/CukesRunner.java,f/9/f95deedea8abd85af2db322cb1cd0194fac2ffb6
-a
-1src/test/java/app/getir/step_defs/Initialize.java,4/d/4d5087417a52cc77b2a7235553cf0382bc0a7d89
 [
 +src/test/java/app/getir/pages/BasePage.java,f/d/fd24996b839b6bba0c85b6ddf01ee762a11cfdc0
-e
-5src/test/java/app/getir/step_defs/Getir_StepDefs.java,0/4/048be1deb9cb59dd816469cf800deb55e2406bbf
 \
 ,src/test/java/app/getir/pages/LoginPage.java,a/1/a1c020fa92cbe0c5ac6028e5cf089c6a86714851
 _
@@ -19,3 +15,11 @@ _
 Q.idea/sonarlint/securityhotspotstore/a/1/a1c020fa92cbe0c5ac6028e5cf089c6a86714851,6/5/657034c36d366a0984462b944434366a28238986
 w
 G.idea/sonarlint/issuestore/a/1/a1c020fa92cbe0c5ac6028e5cf089c6a86714851,5/1/51652a76a1247d7651b2b0ec2bd627f2a62428c5
+]
+-src/test/java/app/getir/pages/BasketPage.java,0/4/04489a3b0ba25e2089dbd824d6d9e4c34f166f46
+h
+8src/test/java/app/getir/step_definitions/Initialize.java,0/7/0755dbbbdfc9a66a2c60f3870c4dd6bdc1df5716
+l
+<src/test/java/app/getir/step_definitions/Getir_stepDefs.java,6/3/6320d3aa9742bf374ff53539c78a4772701b08af
+c
+3src/test/java/app/getir/utilities/ScrollHelper.java,d/2/d2d95d34d1a2a178bd88c4e78e86b3d05bae0c31

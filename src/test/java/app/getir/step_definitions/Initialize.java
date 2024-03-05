@@ -44,6 +44,8 @@ public class Initialize {
                 //.usingPort(1111)
                 .usingAnyFreePort()
                 .build();
+
+
         service.start();
 
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, Platform.ANDROID);
